@@ -106,4 +106,8 @@ main()
 #   File "/Users/rob/Learning/STARTED/cs50_python/Lecture_0_-_Functions,_Variables/./hello_two.py", line 96, in hello
 #     print("hello,", name)
 #                     ^^^^
-# NameError: name 'name' is not defined
+# NameError: name 'name' is not defined 
+
+
+#
+
