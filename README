@@ -1,0 +1,4 @@
+# Using python 3 (so python3 run.py) (yes it's backwards compatible)
+# echo "alias python=/usr/bin/python3" >> ~/.zshrc
+# ➜  ~ which python
+# python: aliased to /usr/bin/python3
