@@ -2,3 +2,29 @@
 # echo "alias python=/usr/bin/python3" >> ~/.zshrc
 # ➜  ~ which python
 # python: aliased to /usr/bin/python3
+
+➜  cs50_python git:(main) gh repo create
+? What would you like to do? Push an existing local repository to GitHub
+? Path to local repository .
+? Repository name cs50_python
+? Description cs50_python
+? Visibility Public
+✓ Created repository robsub/cs50_python on GitHub
+? Add a remote? Yes
+? What should the new remote be called? cs50_python_remote
+✓ Added remote https://github.com/robsub/cs50_python.git
+? Would you like to push commits from the current branch to "cs50_python_remote"? Yes
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.87 KiB | 1.44 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/robsub/cs50_python.git
+ * [new branch]      HEAD -> main
+branch 'main' set up to track 'cs50_python_remote/main'.
+✓ Pushed commits to https://github.com/robsub/cs50_python.git
+
+
+
+
