@@ -19,10 +19,6 @@ if response.startswith("hello"):
 
 
 
-# https://github.com/haleyelder/cs50
-
-# https://rivea0.github.io/blog/solving-the-problem-sets-of-cs50s-introduction-to-programming-with-python-problem-set-1/
-
 
 
     

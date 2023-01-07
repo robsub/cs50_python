@@ -59,14 +59,74 @@ else:
 
 
 
-# Second attmpt (can I use a method like .strip
-# )answer = input("Do you agree? ").strip() or something?
+# Second attmpt 
 
-
-answer = input("What is the Answer to the Great Question of Life, the Universe, and Everything? ")
-if answer == "42" or "forty two" or "forty-two":
+answer = str(input("What is the Answer to the Great Question of Life, the Universe, and Everything? "))
+if answer == "42" or "forty-two" or "forty two":
     print("Yes")
-elif: 
+else:
     print("No")
 
-# This can be improved with .strip (remove hyphen) and somet other method?
+# Bug with this one - no idea why it responds with yes. Lets ask chatGPT 
+
+# WOW chatGPT:
+# This code contains a logical error. The condition in the if statement is not written correctly.
+
+# The or operator has a lower precedence than the == operator, so the expression is evaluated as follows:
+
+# Copy code
+# if (answer == "42") or "forty-two" or "forty two":
+# This means that the if statement will always evaluate to True, because the string "forty-two" is considered a truthy value.
+
+# To fix this, you can use parentheses to explicitly specify the order of operations:
+
+# Copy code
+# if answer == "42" or answer == "forty-two" or answer == "forty two":
+#     print("Yes")
+# else:
+#     print("No")
+
+# ➜  Problem_set_1 git:(main) ✗ python3 Deep_Thought.py
+# What is the Answer to the Great Question of Life, the Universe, and Everything? fifty
+# Yes
+# ➜  Problem_set_1 git:(main) ✗ 
+
+answer = str(input("CHATGPT What is the Answer to the Great Question of Life, the Universe, and Everything? "))
+if answer == "42" or answer == "forty-two" or answer == "forty two":
+    print("Yes")
+else:
+    print("No")
+
+
+# Try swap it round, this works :
+
+answer = str(input("What is the Answer to the Great Question of Life, the Universe, and Everything? "))
+if answer != "42" or "forty-two" or "forty two":
+    print("no")
+else:
+    print("Yes")
+
+ # this now works: 
+ #➜  Problem_set_1 git:(main) ✗ python3 Deep_Thought.py
+# What is the Answer to the Great Question of Life, the Universe, and Everything? five
+# no   
+
+
+
+# Third attempt
+answer = str(input("What is the Answer to the Great Question of Life, the Universe, and Everything?" ))
+#replace hyphen, lower case, no space either side
+answerclean = answer.replace("-"," ").lower().strip()
+
+if answerclean == "42":
+    print("Yes")
+elif answerclean == "forty two":
+    print("Yes")
+else:
+    print("No")
+
+
+
+
+
+
