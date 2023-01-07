@@ -12,14 +12,16 @@ import re
 
 
 
-response = input()
+response = input("Greeting: ")
 
-helloResponse = response.startswith("hello")
-
-if response == helloResponse:
+if response.startswith("hello"):
     print("$0")
 
 
+
+# https://github.com/haleyelder/cs50
+
+# https://rivea0.github.io/blog/solving-the-problem-sets-of-cs50s-introduction-to-programming-with-python-problem-set-1/
 
 
 

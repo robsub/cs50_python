@@ -68,3 +68,5 @@ if answer == "42" or "forty two" or "forty-two":
     print("Yes")
 elif: 
     print("No")
+
+# This can be improved with .strip (remove hyphen) and somet other method?
