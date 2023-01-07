@@ -11,9 +11,19 @@ import re
 # Elif pint "$100"
 
 
-greeting = input("Greeting: ")
 
-if greeting == "hello" and/or "":
+response = input()
+
+helloResponse = response.startswith("hello")
+
+if response == helloResponse:
     print("$0")
 
 
+
+
+
+    
+
+# Recall that a str comes with quite a few methods, per docs.python.org/3/library/stdtypes.html#string-methods.
+# Be sure to give $0 not only for “hello” but also “hello there”, “hello, Newman”, and the like.
